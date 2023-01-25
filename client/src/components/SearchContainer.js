@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Wrapper from '../assets/wrappers/SearchContainer'
 import { useAppContext } from '../context/appContext'
 import FormRow from './FormRow'
@@ -23,10 +22,6 @@ const SearchContainer = () => {
     handleChange({name: e.target.name, value: e.target.value})
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log('handle submit');
-  }
   return (
     <Wrapper>
       <form className="form" onSubmit={handleSearch}>
